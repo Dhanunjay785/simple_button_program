@@ -1,0 +1,11 @@
+simple_button_program
+
+from gpiozero import button
+
+button = Button(2)
+
+while true:
+ if button.is_pressed:
+  print("Button is pressed")
+ else:
+  print("Button is not pressed")
